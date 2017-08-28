@@ -1,35 +1,41 @@
 <div id="wrapper">
 
-  <!-- Services -->
+  <!-- Banner -->
   <section class="main style1">
+    <ngx-slick class="image filtered" [config]="bannerSlidesConfig">
+      <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
+    </ngx-slick>
+    <!-- <div class="image filtered slick-banner" data-position="center">
+      <img src="assets/images/banner2.jpg" alt="" />
+      <img src="assets/images/banner3.jpg" alt="" />
+      <img src="assets/images/banner1.jpg" alt="" />
+    </div> -->
+    <header class="small">
+      <h2>Welcome to Bamboo Salon!</h2>
+      <p>Bamboo Hair Salon is a boutique salon that has been in business for over 8 years. We have 5 stylists that offer a wide
+        variety of cuts, colours and styles as well as our own in-house barber. We are known for our trendy colours and beautiful
+        bridal hair! Our staff has gone through extensive training and has mastered virtually every style. Whether you want
+        a vintage, classic, or modern look, we are the salon for you!</p>
+    </header>
+    <footer>
+      <ul class="actions">
+        <li><a href="https://www.schedulicity.com/scheduling/BHSN89" class="button special icon fa-calendar">Schedule Appointment</a></li>
+      </ul>
+    </footer>
+  </section>
+
+  <!-- Services -->
+  <section class="main style1" *ngIf="services && services.length">
     <div class="inner">
       <header class="small">
         <h3 class="text-center">What We Offer</h3>
       </header>
     </div>
     <div class="features">
-      <section>
-        <span class="icon fa-check major accent1"></span>
-        <h3>Haircut &amp; Style</h3>
-        <p>Every haircut is executed with precision and style. We promise you'll walk out of here looking your very best!</p>
-      </section>
-      <section>
-        <span class="icon fa-check major accent2"></span>
-        <h3>Custom Colours and Highlights</h3>
-        <p>We make sure every client leaves with a colour that best suits them. We take in to careful consideration the clients
-          needs and wants when choosing the perfect look!</p>
-      </section>
-      <section>
-        <span class="icon fa-check major accent3"></span>
-        <h3>Bridal Hair</h3>
-        <p>We pride ourselves in our beautiful wedding styles. With 15-20 weddings booked annually, we have the tools, tricks
-          and knowledge to having you look your very best on your special day!</p>
-      </section>
-      <section>
-        <span class="icon fa-check major accent4"></span>
-        <h3>Hair Extensions</h3>
-        <p>Corrie, our extension tech is highly skilled and knows how to install virtually every type of hair extension. Book
-          your consultation with Corrie today!</p>
+      <section *ngFor="let service of services">
+        <span class="icon {{ service.icon }} major {{ service.class }}"></span>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
       </section>
     </div>
     <footer>
@@ -37,6 +43,28 @@
         <li><a href="#" class="button special next">View Our Services</a></li>
       </ul>
     </footer>
+  </section>
+
+  <!-- Reviews -->
+  <section class="main style1" *ngIf="reviews && reviews.length">
+    <div class="inner">
+      <header class="small">
+        <h3 class="text-center">What Our Customers Are Saying</h3>
+      </header>
+      <hr>
+      <ngx-slick [config]="reviewSlidesConfig">
+        <div ngxSlickItem *ngFor="let review of reviews">
+          <header>
+            <h4>{{ review.name }}</h4>
+            <p>
+              <span class="icon fa-star accent5" *ngFor="let i of Array(review.rating).fill(1)"></span>
+              <span class="review-date">{{ review.date | amTimeAgo }}</span>
+            </p>
+          </header>
+          <p>{{ review.text }}</p>
+        </div>
+      </ngx-slick>
+    </div>
   </section>
 
   <!-- Section -->

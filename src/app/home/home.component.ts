@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,47 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  services = void 0;
+  reviews = void 0;
 
-  ngOnInit() {
+  bannerSlidesConfig = {
+    accessibility: false,
+    arrows: false,
+    autoplay: true,
+    fade: true
+  };
+  reviewSlidesConfig = {
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true
+  };
+  bannerSlides = [
+    { img: 'assets/images/banner2.jpg' },
+    { img: 'assets/images/banner3.jpg' },
+    { img: 'assets/images/banner1.jpg' }
+  ];
+
+  constructor(private dataService: DataService) {
+
+    this.dataService.getServicesOverview().subscribe(
+      (res) => {
+        this.services = res;
+      },
+      (error) => console.log('Error fetching services: ' + error)
+    )
+
+    this.dataService.getReviews().subscribe(
+      (res) => {
+        this.reviews = res;
+      },
+      (error) => console.log('Error fetching reviews: ' + error)
+    )
   }
 
+  ngOnInit() {}
+
+  Array(len) {
+    return Array(len);
+  }
 }

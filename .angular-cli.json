@@ -20,21 +20,21 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "lib/slick/slick.css",
-        "lib/slick/slick-theme.css"
+        "vendor/slick/slick.css",
+        "vendor/slick/slick-theme.css"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [
-          "lib/px-vortex/assets/sass"
+          "vendor/px-vortex/assets/sass"
         ]
       },
       "scripts": [
-        "lib/px-vortex/assets/js/jquery.min.js",
-        "lib/px-vortex/assets/js/jquery.dropotron.min.js",
-        "lib/px-vortex/assets/js/skel.min.js",
-        "lib/px-vortex/assets/js/util.js",
-        "lib/px-vortex/assets/js/main.js",
-        "lib/slick/slick.min.js"
+        "vendor/px-vortex/assets/js/jquery.min.js",
+        "vendor/px-vortex/assets/js/jquery.dropotron.min.js",
+        "vendor/px-vortex/assets/js/skel.min.js",
+        "vendor/px-vortex/assets/js/util.js",
+        "vendor/px-vortex/assets/js/main.js",
+        "vendor/slick/slick.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

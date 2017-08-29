@@ -95,24 +95,6 @@
 				$('#navPanel')
 					.css('transition', 'none');
 
-			// $(document).ready(function(){
-
-			// 	$('.slick-banner').slick({
-			// 		accessibility: false,
-			// 		arrows: false,
-			// 		autoplay: true,
-			// 		fade: true
-			// 	});
-
-			// 	$('.slick-reviews').slick({
-			// 		arrows: false,
-			// 		autoplay: true,
-			// 		autoplaySpeed: 5000,
-			// 		dots: true
-			// 	});
-
-			// });
-
 	});
 
 })(jQuery);

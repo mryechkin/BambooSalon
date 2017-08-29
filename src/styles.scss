@@ -2,6 +2,58 @@
 @import '../node_modules/font-awesome/scss/font-awesome';
 @import 'vendor/px-vortex/assets/sass/main';
 
+/*
+ * Home
+ */
+// header.intro {
+//   background-image: url("assets/images/logo-circle-opaque.jpg");
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+
 .text-center {
   text-align: center;
+}
+
+.review-date {
+  margin-left: 0.25rem;
+}
+
+.slick-dots {
+  padding: 1rem !important;
+
+  li {
+    button {
+      &:before {
+        content: '' !important;
+      }
+    }
+
+    &.slick-active {
+      button {
+        $p: null;
+				box-shadow: inset 0 0 0 3px _palette($p, accent4);
+				color: _palette($p, accent4) !important;
+      }
+    }
+  }
+}
+
+.booking {
+  // margin-top: 3.5rem;
+	// box-shadow: 0 1rem 4rem 0.125rem _palette(bg-shadow);
+
+  // @include breakpoint(large) {
+  //   margin: 2.5rem 0 0 0;
+  // }
+
+  // @include breakpoint(small) {
+  //   margin: 2rem 0 0 0;
+  // }
+
+  // @include breakpoint(xsmall) {
+  //   margin: 1.5rem 0 0 0;
+	//   box-shadow: none;
+  // }
 }

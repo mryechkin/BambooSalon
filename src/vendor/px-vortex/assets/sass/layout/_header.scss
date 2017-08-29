@@ -28,8 +28,8 @@
 
 		a {
 			display: block;
-			height: inherit;
-			line-height: inherit;
+			height: 4.5rem;
+			line-height: 4.5rem;
 			border-bottom: 0;
 
 			&:hover {
@@ -43,6 +43,13 @@
 			left: 2rem;
 			text-transform: uppercase;
 			font-size: larger;
+			height: 4.5rem;
+			line-height: 4.5rem;
+
+			img {
+				height: 4.5rem;
+				line-height: 4.5rem;
+			}
 
 			strong {
 				font-weight: _font(weight-extrabold);
@@ -53,11 +60,13 @@
 			position: absolute;
 			top: 0;
 			right: 2rem;
+			height: 4.5rem;
 
 			> ul {
 				list-style: none;
 				padding: 0;
 				margin: 0;
+				height: inherit;
 
 				> li {
 					position: relative;
@@ -66,7 +75,7 @@
 					padding: 0;
 
 					> a {
-						padding: 0 0.75rem;
+						padding: 0 0.1rem;
 						font-weight: _font(weight-bold);
 						overflow: hidden;
 
@@ -208,8 +217,20 @@
 			height: 44px;
 			line-height: 44px;
 
+			a {
+				height: 44px;
+				line-height: 44px;
+			}
+
 			> .logo {
 				left: 1rem;
+				height: 44px;
+				line-height: 44px;
+
+				img {
+					height: 44px;
+					line-height: 44px;
+				}
 			}
 
 			> .navPanelToggle {

@@ -2,25 +2,25 @@
   {
     "title": "Haircut & style",
     "description": "Every haircut is executed with precision and style. We promise you'll walk out of here looking your very best!",
-    "icon": "fa-check",
+    "icon": "fa-scissors fa-rotate-270",
     "class": "accent1"
   }, 
   {
     "title": "Custom Colours and Highlights",
     "description": "We make sure every client leaves with a colour that best suits them. We take in to careful consideration the clients needs and wants when choosing the perfect look!",
-    "icon": "fa-check",
+    "icon": "fa-scissors fa-rotate-270",
     "class": "accent2"
   },
   {
     "title": "Bridal Hair",
     "description": "We pride ourselves in our beautiful wedding styles. With 15-20 weddings booked annually, we have the tools, tricks and knowledge to having you look your very best on your special day!",
-    "icon": "fa-check",
+    "icon": "fa-scissors fa-rotate-270",
     "class": "accent3"
   },
   {
     "title": "Hair Extensions",
     "description": "Corrie, our extension tech is highly skilled and knows how to install virtually every type of hair extension. Book your consultation with Corrie today!",
-    "icon": "fa-check",
+    "icon": "fa-scissors fa-rotate-270",
     "class": "accent4"
   }
 ]

@@ -8,6 +8,7 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
+  pageData = void 0;
   services = void 0;
   reviews = void 0;
 
@@ -24,21 +25,32 @@ export class HomeComponent implements OnInit {
     dots: true
   };
   bannerSlides = [
+    { img: 'assets/images/banner1.jpg' },
     { img: 'assets/images/banner2.jpg' },
     { img: 'assets/images/banner3.jpg' },
-    { img: 'assets/images/banner1.jpg' }
+    { img: 'assets/images/banner4.jpg' },
+    { img: 'assets/images/banner5.jpg' },
+    { img: 'assets/images/banner6.jpg' },
+    { img: 'assets/images/banner7.jpg' }
   ];
 
   constructor(private dataService: DataService) {
 
-    this.dataService.getServicesOverview().subscribe(
+    this.dataService.getDataFromUrl('assets/data/home.json').subscribe(
+      (res) => {
+        this.pageData = res;
+      },
+      (error) => console.log('Error fetching page data: ' + error)
+    )
+
+    this.dataService.getDataFromUrl('assets/data/home.services.json').subscribe(
       (res) => {
         this.services = res;
       },
       (error) => console.log('Error fetching services: ' + error)
     )
 
-    this.dataService.getReviews().subscribe(
+    this.dataService.getDataFromUrl('assets/data/home.reviews.json').subscribe(
       (res) => {
         this.reviews = res;
       },

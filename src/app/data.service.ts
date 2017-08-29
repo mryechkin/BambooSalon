@@ -10,11 +10,7 @@ export class DataService {
 
   constructor(private http: Http) { }
 
-  getServicesOverview = (): Observable<Response> => {
-    return this.http.get('assets/data/home.services.json').map(res => res.json());
-  }
-
-  getReviews = (): Observable<Response> => {
-    return this.http.get('assets/data/home.reviews.json').map(res => res.json());
+  getDataFromUrl = (url): Observable<Response> => {
+    return this.http.get(url).map(res => res.json());
   }
 }

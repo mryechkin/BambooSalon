@@ -100,6 +100,21 @@
 		}
 
 		&.style1 {
+			> header.intro {
+				img.separator {
+					height: 5rem;
+					padding: 1rem;
+				}
+
+				> :first-child {
+					margin-bottom: 0;
+					padding-bottom: 0;
+
+					&:after {
+						display: none;
+					}
+				}
+			}
 		}
 
 		&.style2 {

@@ -1,90 +1,66 @@
-<div id="wrapper">
+<!-- Banner -->
+<section class="main style1">
+  <ngx-slick class="image filtered" [config]="bannerSlidesConfig">
+    <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
+  </ngx-slick>
+  <!-- <div class="image filtered slick-banner" data-position="center">
+    <img src="assets/images/banner2.jpg" alt="" />
+    <img src="assets/images/banner3.jpg" alt="" />
+    <img src="assets/images/banner1.jpg" alt="" />
+  </div> -->
+  <header class="small intro">
+    <h2>{{ pageData.introTitle }}</h2>
+    <div>
+      <img class="separator" src="assets/images/logo-bottom.png" border="0" />
+    </div>
+    <p>{{ pageData.introText }}</p>
+  </header>
+  <footer>
+    <ul class="actions">
+      <li><a href="https://www.schedulicity.com/scheduling/BHSN89" class="button special icon fa-calendar">Schedule Appointment</a></li>
+    </ul>
+  </footer>
+</section>
 
-  <!-- Banner -->
-  <section class="main style1">
-    <ngx-slick class="image filtered" [config]="bannerSlidesConfig">
-      <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
+<!-- Services -->
+<section class="main style1" *ngIf="services && services.length">
+  <div class="inner">
+    <header class="small">
+      <h3 class="text-center">{{ pageData.servicesTitle }}</h3>
+    </header>
+  </div>
+  <div class="features">
+    <section *ngFor="let service of services">
+      <span class="icon {{ service.icon }} major {{ service.class }}"></span>
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+    </section>
+  </div>
+  <footer>
+    <ul class="actions">
+      <li><a href="#" class="button special next">{{ pageData.servicesButtonText }}</a></li>
+    </ul>
+  </footer>
+</section>
+
+<!-- Reviews -->
+<section class="main style1" *ngIf="reviews && reviews.length">
+  <div class="inner">
+    <header class="small">
+      <h3 class="text-center">{{ pageData.reviewsTitle }}</h3>
+    </header>
+    <hr>
+    <ngx-slick [config]="reviewSlidesConfig">
+      <div ngxSlickItem *ngFor="let review of reviews">
+        <header>
+          <h4>{{ review.name }}</h4>
+          <p>
+            <span class="icon fa-star accent5" *ngFor="let i of Array(review.rating).fill(1)"></span>
+            <span class="review-date">{{ review.date | amTimeAgo }}</span>
+          </p>
+        </header>
+        <p>{{ review.text }}</p>
+      </div>
     </ngx-slick>
-    <!-- <div class="image filtered slick-banner" data-position="center">
-      <img src="assets/images/banner2.jpg" alt="" />
-      <img src="assets/images/banner3.jpg" alt="" />
-      <img src="assets/images/banner1.jpg" alt="" />
-    </div> -->
-    <header class="small">
-      <h2>Welcome to Bamboo Salon!</h2>
-      <p>Bamboo Hair Salon is a boutique salon that has been in business for over 8 years. We have 5 stylists that offer a wide
-        variety of cuts, colours and styles as well as our own in-house barber. We are known for our trendy colours and beautiful
-        bridal hair! Our staff has gone through extensive training and has mastered virtually every style. Whether you want
-        a vintage, classic, or modern look, we are the salon for you!</p>
-    </header>
-    <footer>
-      <ul class="actions">
-        <li><a href="https://www.schedulicity.com/scheduling/BHSN89" class="button special icon fa-calendar">Schedule Appointment</a></li>
-      </ul>
-    </footer>
-  </section>
-
-  <!-- Services -->
-  <section class="main style1" *ngIf="services && services.length">
-    <div class="inner">
-      <header class="small">
-        <h3 class="text-center">What We Offer</h3>
-      </header>
-    </div>
-    <div class="features">
-      <section *ngFor="let service of services">
-        <span class="icon {{ service.icon }} major {{ service.class }}"></span>
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
-      </section>
-    </div>
-    <footer>
-      <ul class="actions">
-        <li><a href="#" class="button special next">View Our Services</a></li>
-      </ul>
-    </footer>
-  </section>
-
-  <!-- Reviews -->
-  <section class="main style1" *ngIf="reviews && reviews.length">
-    <div class="inner">
-      <header class="small">
-        <h3 class="text-center">What Our Customers Are Saying</h3>
-      </header>
-      <hr>
-      <ngx-slick [config]="reviewSlidesConfig">
-        <div ngxSlickItem *ngFor="let review of reviews">
-          <header>
-            <h4>{{ review.name }}</h4>
-            <p>
-              <span class="icon fa-star accent5" *ngFor="let i of Array(review.rating).fill(1)"></span>
-              <span class="review-date">{{ review.date | amTimeAgo }}</span>
-            </p>
-          </header>
-          <p>{{ review.text }}</p>
-        </div>
-      </ngx-slick>
-    </div>
-  </section>
-
-  <!-- Section -->
-  <section class="main style2">
-    <header class="small">
-      <h2>Book Online Now!</h2>
-      <ul class="actions">
-        <li>
-          <a href="https://www.schedulicity.com/scheduling/BHSN89" class="button icon fa-check-circle">Schedule Appointment</a>
-        </li>
-      </ul>
-    </header>
-    <footer>
-      <ul class="icons">
-        <li><a href="https://www.facebook.com/Bamboo-Hair-Salon-127927410607405/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="https://www.instagram.com/bamboohairsalonkitchener" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="#" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
-        <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-      </ul>
-    </footer>
-  </section>
-
-</div>
+  </div>
+</section>

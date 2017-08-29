@@ -10,12 +10,13 @@
 		color: _palette(fg-light);
 		margin: -2rem 0 6rem 0;
 		text-align: center;
+		text-transform: uppercase;
 
 		@include breakpoint(xlarge) {
-			margin: 0 0 3.5rem 0;
+			margin: 0 0 2.5rem 0;
 		}
 
 		@include breakpoint(xsmall) {
-			margin: 2rem 0;
+			margin: 1.5rem 0;
 		}
 	}

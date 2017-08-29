@@ -11,8 +11,8 @@
 		margin: (_size(element-margin) * 1.25) 0;
 
 		@include flexgrid((
-			columns:			3,
-			gutters:			8rem,
+			columns:			4,
+			gutters:			6rem,
 			horizontal-align:	center,
 			flush:				false
 		));
@@ -26,10 +26,6 @@
 				margin-bottom: 0;
 			}
 
-			&:nth-child(3n - 2) {
-				border-left-width: 0;
-			}
-
 			&:nth-child(-n + 3) {
 				border-top-width: 0;
 			}
@@ -40,7 +36,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint(large) {
 			@include flexgrid-resize((
 				columns:		2,
 				gutters:		6rem,

@@ -13,6 +13,15 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
+import { TeamComponent } from './team/team.component';
+import { TrainingComponent } from './training/training.component';
+import { EmploymentComponent } from './employment/employment.component';
+import { ServicesComponent } from './services/services.component';
+import { ProductsComponent } from './products/products.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ThebaldbarberComponent } from './thebaldbarber/thebaldbarber.component';
+import { ContactComponent } from './contact/contact.component';
+import { BookingComponent } from './booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,16 @@ import { AppointmentsComponent } from './appointments/appointments.component';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    AppointmentsComponent
+    AppointmentsComponent,
+    TeamComponent,
+    TrainingComponent,
+    EmploymentComponent,
+    ServicesComponent,
+    ProductsComponent,
+    GalleryComponent,
+    ThebaldbarberComponent,
+    ContactComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,

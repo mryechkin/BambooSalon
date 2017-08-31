@@ -9,8 +9,6 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   pageData = {};
-  services = void 0;
-  reviews = void 0;
 
   bannerSlidesConfig = {
     accessibility: false,
@@ -35,26 +33,11 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor(private dataService: DataService) {
-
     this.dataService.getDataFromUrl('assets/data/home.json').subscribe(
       (res) => {
         this.pageData = res;
       },
       (error) => console.log('Error fetching page data: ' + error)
-    )
-
-    this.dataService.getDataFromUrl('assets/data/home.services.json').subscribe(
-      (res) => {
-        this.services = res;
-      },
-      (error) => console.log('Error fetching services: ' + error)
-    )
-
-    this.dataService.getDataFromUrl('assets/data/home.reviews.json').subscribe(
-      (res) => {
-        this.reviews = res;
-      },
-      (error) => console.log('Error fetching reviews: ' + error)
     )
   }
 

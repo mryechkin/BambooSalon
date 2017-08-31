@@ -10,12 +10,16 @@ export class TeamComponent implements OnInit {
 
   pageData = {};
 
-  teamSlidesConfig = {
+  bannerSlidesConfig = {
     accessibility: false,
     arrows: false,
     autoplay: true,
     fade: true
   };
+  bannerSlides = [
+    { img: 'assets/images/team1.jpg' },
+    { img: 'assets/images/team2.jpg' }
+  ];
 
   constructor(private dataService: DataService) {
     this.dataService.getDataFromUrl('assets/data/team.json').subscribe(

@@ -1,11 +1,10 @@
 <section class="main style1">
-  <header class="small">
+  <header>
     <h2>{{ pageData.title }}</h2>
     <p>{{ pageData.intro }}</p>
   </header>
-  <ngx-slick class="image" data-position="center" [config]="teamSlidesConfig">
-    <img ngxSlickItem src="assets/images/team1.jpg" alt="" />
-    <img ngxSlickItem src="assets/images/team2.jpg" alt="" />
+  <ngx-slick class="image" data-position="center" [config]="bannerSlidesConfig">
+    <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
   </ngx-slick>
   <div class="inner">
     <blockquote>

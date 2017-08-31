@@ -1,0 +1,29 @@
+{
+  "title": "Products",
+  "notes": [
+    "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for a refund or exchange.",
+    "If you are not 100% satisfied with your purchase, you can return or exchange within 14 days of purchase."
+  ],
+  "products": [
+    {
+      "name": "Kevin Murphy",
+      "description": "Born from the same philosophy as skincare, Kevin.Murphy products are weightlessly designed to deliver performance, strength and longevity.<br><br>When searching the world for ingredients, KEVIN.MURPHY looked for companies that use mirco cultivation, organic growing practices, or ecologically sound, wild harvesting techniques to ensure that KEVIN.MURPHY range is the very highest natural quality. All KEVIN.MURPHY hair products are paraben, sulfate and cruelty free."
+    },
+    {
+      "name": "Moroccanoil",
+      "description": "Moroccanoil began with the simple wish to share the transformative powers of our rejuvenating argan-oil infused formulas and adapted this tradition as the philosophy for the brand. All Moroccanoil products for hair and skin are infused with argan oil – signature to the brand Moroccanoil only sources the highest quality argan oil originating from argan trees grown in Morocco. The argan oil is in all Moroocanoil hair products and are manufactured by a cold-press process."
+    },
+    {
+      "name": "R+Co.",
+      "description": "All of R+Co.’s products are treatment-oriented, with the health of the hair and scalp always top-of- mind. R+Co. uses unique ingredients and complexes to make sure that each product delivers true benefits."
+    },
+    {
+      "name": "Amika",
+      "description": "Amika products are like a good friend- straight forward, dependable and fun to spend time with. They are always on a quest for new technologies and ingredients when better alternatives are available. Their products are vegetarian friendly, cruelty-free and free from sulfates, MIT, MCI, phthalates and artificial colours."
+    },
+    {
+      "name": "Olaplex",
+      "description": "Two salon steps, one to take home.<br><br>Olaplex’s simple three-step process includes a patented active ingredient that works on a molecular level to seek out broken bonds in the hair that are caused by chemical, thermal, and mechanical damage. You can use Olaplex to restore compromised hair, or add it to another service to provide the ultimate breakage insurance."
+    }
+  ]
+}

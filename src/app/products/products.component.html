@@ -1,3 +1,29 @@
-<p>
-  products works!
-</p>
+<section class="main style1">
+  <header>
+    <h2>{{ pageData.title }}</h2>
+  </header>
+  <ngx-slick class="image" data-position="center" [config]="bannerSlidesConfig">
+    <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
+  </ngx-slick>
+  <div class="inner" *ngIf="pageData.products && pageData.products.length">
+    <ng-container *ngFor="let product of pageData.products; let i = index" [attr.data-index]="i">
+      <h3>{{ product.name }}</h3>
+      <p [innerHTML]="product.description"></p>
+      <hr *ngIf="i < pageData.products.length - 1">
+    </ng-container>
+    <!-- <ng-container *ngIf="pageData.notes && pageData.notes.length">
+      <div class="box" *ngFor="let note of pageData.notes">
+        <p>{{ note }}</p>
+      </div>
+    </ng-container> -->
+  </div>
+</section>
+
+<section class="main style1">
+  <div class="inner" *ngIf="pageData.notes && pageData.notes.length">
+    <h4>Please Note <span class="icon fa-info-circle accent3"></span></h4>
+    <div class="box" *ngFor="let note of pageData.notes">
+      <p>{{ note }}</p>
+    </div>
+  </div>
+</section>

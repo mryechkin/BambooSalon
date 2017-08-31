@@ -1,0 +1,56 @@
+{
+  "title": "Our Team",
+  "intro": "Welcome to the Bamboo Family! We are a team of highly skilled, innovative stylists who are committed to providing you with your best look.",
+  "quote": "“I have always wanted to create a comfortable, family-friendly salon that provides great work at a reasonable price” – Tiffany Smith, Owner",
+  "team": [
+    {
+      "name": "Tiffany Smith",
+      "title": "Owner / Senior Stylist",
+      "bio": "Tiffany began her career with CMT as a stylist for various country music artists. She then went on to hone her colour expertise, working for Matrix and Artego, educating other stylists throughout Ontario. After 10 years of experience in high end salons, Tiffany opened Bamboo in 2007.<br/><br/>Anyone that knows her, knows Tiffany has a passion for hair and making clients look and feel their very best. The moment you enter the salon, you know you’re a part of the Bamboo Family.",
+      "imageUrl": "assets/images/team/Tiffany.jpg"
+    },
+    {
+      "name": "Nick Miller",
+      "title": "Owner / Barber",
+      "bio": "Our very own Bald Barber! Nick has been a staple within Bamboo and the industry, working alongside his wife, Tiffany for over 10 years. If you have not seen his work, you are MISSING OUT. His creativity and ingenuity come through in every cut and style. Specializing in men’s cuts, Nick’s work is a modern twist on traditional barbering.",
+      "imageUrl": "assets/images/team/Nick.jpg",
+      "logoUrl": "assets/images/thebaldbarber-small.png"
+    },
+    {
+      "name": "Amber Pugh",
+      "title": "Senior Stylist",
+      "bio": "After gaining experience in the industry, both in small and high-end salons, Amber decided that Bamboo is where she wanted to be and joined Tiffany in 2010.<br/><br/>A skilled colourist, Amber has travelled throughout the province, educating fellow stylists on trend and techniques. Amber has continued her education, taking additional courses in Toronto, London and Edmonton, pursuing her passion.",
+      "imageUrl": "assets/images/team/Amber.jpg"
+    },
+    {
+      "name": "Corrie Matthews",
+      "title": "Stylist / Extension Technician",
+      "bio": "Looking to add some length or fullness to your locks? Come see our resident extension specialist!<br/><br/>Growing up in the industry, Corrie learned at a young age that styling was her calling. Corrie has excelled in every aspect of the business and her personality can’t be matched. Book an appointment with her today, and let her tell you the story of when she had her own television show!",
+      "imageUrl": "assets/images/team/Corrie.jpg"
+    },
+    {
+      "name": "Haley Gerber",
+      "title": "Stylist",
+      "bio": "Haley graduated from Voila Institute of Hair Design in 2015.  With Goldwell colour training and her expertise in the most gorgeous ombres you’ll ever see, Haley&#39;s colour work is always a hit.  Sweeter than sugar, Haley is always willing to try new techniques, so come in with your Pinterest board ready!",
+      "imageUrl": "assets/images/team/Haley.jpg"
+    },
+    {
+      "name": "Emily Ireland",
+      "title": "Stylist",
+      "bio": "Emily graduated from Voila Institute of Hair Design in 2015 and hit the ground running. Immediately scooped up by a local high-end salon, Emily specializes in trendy colours. Her high level of skill and sunny personality keep her clients coming back.",
+      "imageUrl": "assets/images/team/Emily.jpg"
+    },
+    {
+      "name": "Morgan Compton",
+      "title": "Stylist",
+      "bio": "Looking for that icy blonde? Wanting to brighten up a dull or yellowed colour? Come in and book with Morgan! She is quickly gaining a reputation as a “Blondexpert” (yes, we invented a word) and you need her in your life.",
+      "imageUrl": "assets/images/team/Morgan.jpg"
+    },
+    {
+      "name": "Lyndsay Nicholson",
+      "title": "Stylist / Assisstant",
+      "bio": "Have you ever had that friend who remembers LITERALLY everything? That’s Lyndsay. You’ll see her around the salon, working on clients and having a laugh with anyone and everyone nearby.",
+      "imageUrl": "assets/images/team/Lyndsay.jpg"
+    }
+  ]
+}

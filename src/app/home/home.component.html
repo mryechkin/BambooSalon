@@ -1,6 +1,6 @@
 <!-- Banner -->
 <section class="main style1">
-  <ngx-slick class="image filtered" [config]="bannerSlidesConfig">
+  <ngx-slick class="image" [config]="bannerSlidesConfig">
     <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
   </ngx-slick>
   <!-- <div class="image filtered slick-banner" data-position="center">
@@ -23,14 +23,14 @@
 </section>
 
 <!-- Services -->
-<section class="main style1" *ngIf="services && services.length">
+<section class="main style1" *ngIf="pageData.services && pageData.services.length">
   <div class="inner">
     <header class="small">
       <h3 class="text-center">{{ pageData.servicesTitle }}</h3>
     </header>
   </div>
   <div class="features">
-    <section *ngFor="let service of services">
+    <section *ngFor="let service of pageData.services">
       <span class="icon {{ service.icon }} major {{ service.class }}"></span>
       <h3>{{ service.title }}</h3>
       <p>{{ service.description }}</p>
@@ -38,20 +38,20 @@
   </div>
   <footer>
     <ul class="actions">
-      <li><a href="#" class="button special next">{{ pageData.servicesButtonText }}</a></li>
+      <li><a routerLink="services" class="button special next">{{ pageData.servicesButtonText }}</a></li>
     </ul>
   </footer>
 </section>
 
 <!-- Reviews -->
-<section class="main style1" *ngIf="reviews && reviews.length">
+<section class="main style1" *ngIf="pageData.reviews && pageData.reviews.length">
   <div class="inner">
     <header class="small">
       <h3 class="text-center">{{ pageData.reviewsTitle }}</h3>
     </header>
     <hr>
     <ngx-slick [config]="reviewSlidesConfig">
-      <div ngxSlickItem *ngFor="let review of reviews">
+      <div ngxSlickItem *ngFor="let review of pageData.reviews">
         <header>
           <h4>{{ review.name }}</h4>
           <p>

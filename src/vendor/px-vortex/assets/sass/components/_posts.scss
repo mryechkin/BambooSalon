@@ -27,7 +27,7 @@
 		}
 
 		@include flexgrid((
-			columns:			3,
+			columns:			4,
 			gutters:			3rem,
 			horizontal-align:	center,
 			flush:				true
@@ -40,7 +40,7 @@
 				columns:		2,
 				gutters:		3rem,
 				flush:			true,
-				prev-columns:	3
+				prev-columns:	2
 			));
 
 			article:nth-child(3n):last-child {
@@ -53,7 +53,7 @@
 				columns:		2,
 				gutters:		2rem,
 				flush:			true,
-				prev-columns:	(3, 2)
+				prev-columns:	(4, 2)
 			));
 		}
 
@@ -62,7 +62,7 @@
 				columns:		1,
 				gutters:		3rem,
 				flush:			true,
-				prev-columns:	(3, 2)
+				prev-columns:	(4, 2)
 			));
 		}
 

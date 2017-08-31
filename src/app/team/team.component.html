@@ -1,3 +1,34 @@
-<p>
-  team works!
-</p>
+<section class="main style1">
+  <header class="small">
+    <h2>{{ pageData.title }}</h2>
+    <p>{{ pageData.intro }}</p>
+  </header>
+  <ngx-slick class="image" data-position="center" [config]="teamSlidesConfig">
+    <img ngxSlickItem src="assets/images/team1.jpg" alt="" />
+    <img ngxSlickItem src="assets/images/team2.jpg" alt="" />
+  </ngx-slick>
+  <!-- <div class="image" >
+    <img src="assets/images/team1.jpg" alt="" />
+  </div> -->
+  <div class="inner">
+    <blockquote>
+      {{ pageData.quote }}
+    </blockquote>
+    <hr>
+    <div class="posts" *ngIf="pageData && pageData.team && pageData.team.length">
+      <article *ngFor="let member of pageData.team">
+        <a class="image">
+          <img src="{{ member.imageUrl }}" border="0"/>
+        </a>
+        <header>
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.title }}</p>
+        </header>
+        <p *ngIf="member.logoUrl" class="team-logo">
+          <img src="{{ member.logoUrl }}" border="0" />
+        </p>
+        <p [innerHTML]="member.bio"></p>
+      </article>
+    </div>
+  </div>
+</section>

@@ -20,6 +20,22 @@
   margin-left: 0.25rem;
 }
 
+.team-logo {
+  margin: 0 0 1rem 0;
+
+  img {
+    max-width: 180px;
+
+    @include breakpoint(medium) {
+			max-width: 160px;
+    }
+    
+    @include breakpoint(small) {
+			max-width: 140px;
+		}
+  }
+}
+
 .slick-dots {
   padding: 1rem !important;
 
@@ -38,22 +54,4 @@
       }
     }
   }
-}
-
-.booking {
-  // margin-top: 3.5rem;
-	// box-shadow: 0 1rem 4rem 0.125rem _palette(bg-shadow);
-
-  // @include breakpoint(large) {
-  //   margin: 2.5rem 0 0 0;
-  // }
-
-  // @include breakpoint(small) {
-  //   margin: 2rem 0 0 0;
-  // }
-
-  // @include breakpoint(xsmall) {
-  //   margin: 1.5rem 0 0 0;
-	//   box-shadow: none;
-  // }
 }

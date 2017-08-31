@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../data.service";
 
 @Component({
   selector: 'app-team',
@@ -7,7 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  pageData = {};
+
+  teamSlidesConfig = {
+    accessibility: false,
+    arrows: false,
+    autoplay: true,
+    fade: true
+  };
+
+  constructor(private dataService: DataService) {
+    this.dataService.getDataFromUrl('assets/data/team.json').subscribe(
+      (res) => {
+        this.pageData = res;
+      },
+      (error) => console.log('Error fetching page data: ' + error)
+    )
+  }
 
   ngOnInit() {
   }

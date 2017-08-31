@@ -8,7 +8,7 @@ import { DataService } from "../data.service";
 })
 export class BookingComponent implements OnInit {
 
-  pageData = void 0;
+  pageData = {};
 
   constructor(private dataService: DataService) {
     this.dataService.getDataFromUrl('assets/data/footer.json').subscribe(
@@ -20,6 +20,11 @@ export class BookingComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  openLink(url) {
+    window.open(url, '_blank');
+    return false;
   }
 
 }

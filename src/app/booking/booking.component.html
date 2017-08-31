@@ -10,8 +10,8 @@
   </header>
   <footer>
     <ul class="icons">
-      <li><a href="{{pageData.facebookURL}}" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-      <li><a href="{{pageData.instagramURL}}" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a (click)="openLink(pageData.facebookURL)" href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a (click)="openLink(pageData.instagramURL)" href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
       <li><a href="{{pageData.phoneURL}}" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
       <li><a href="{{pageData.emailURL}}" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
     </ul>

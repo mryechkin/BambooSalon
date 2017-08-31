@@ -8,7 +8,7 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-  pageData = void 0;
+  pageData = {};
   services = void 0;
   reviews = void 0;
 

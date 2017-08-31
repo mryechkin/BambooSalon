@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   pageData = {};
+  bookingData = {};
 
   bannerSlidesConfig = {
     accessibility: false,
@@ -36,6 +37,13 @@ export class HomeComponent implements OnInit {
     this.dataService.getDataFromUrl('assets/data/home.json').subscribe(
       (res) => {
         this.pageData = res;
+      },
+      (error) => console.log('Error fetching page data: ' + error)
+    )
+
+    this.dataService.getDataFromUrl('assets/data/footer.json').subscribe(
+      (res) => {
+        this.bookingData = res;
       },
       (error) => console.log('Error fetching page data: ' + error)
     )

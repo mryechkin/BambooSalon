@@ -2,15 +2,15 @@
 @import '../node_modules/font-awesome/scss/font-awesome';
 @import 'vendor/px-vortex/assets/sass/main';
 
-/*
- * Home
- */
-// header.intro {
-//   background-image: url("assets/images/logo-circle-opaque.jpg");
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
+app-appointments {
+  & header {
+    & h2 {
+      & + p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
 
 .text-center {
   text-align: center;

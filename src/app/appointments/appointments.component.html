@@ -1,3 +1,18 @@
-<p>
-  appointments works!
-</p>
+<section class="main style1">
+  <header>
+    <h2>{{ pageData.title }}</h2>
+    <p>
+      <a href="https://www.schedulicity.com/scheduling/BHSN89" class="button special icon fa-calendar">Schedule Appointment</a>
+    </p>
+  </header>
+</section>
+
+<section class="main style1">
+  <div class="inner" *ngIf="pageData.sections && pageData.sections.length">
+    <ng-container *ngFor="let section of pageData.sections; let i = index" [attr.data-index]="i">
+      <h3>{{ section.title }}</h3>
+      <p [innerHTML]="section.description"></p>
+      <hr *ngIf="i < pageData.sections.length - 1">
+    </ng-container>
+  </div>
+</section>

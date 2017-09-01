@@ -11,7 +11,7 @@ export class BookingComponent implements OnInit {
   pageData = {};
 
   constructor(private dataService: DataService) {
-    this.dataService.getDataFromUrl('assets/data/booking.json').subscribe(
+    this.dataService.getDataFromUrl('assets/data/footer.json').subscribe(
       (res) => {
         this.pageData = res;
       },

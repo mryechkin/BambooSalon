@@ -24,14 +24,23 @@
 		}
 
 		td {
-			padding: 0.75rem 0.75rem;
+			padding: 0.5rem 0.5rem;
+			text-align: left;
+
+			&:not(:first-child) {
+				text-align: center;
+			}
 		}
 
 		th {
-			font-size: 0.9rem;
+			font-size: 1rem;
 			font-weight: _font(weight-bold);
-			padding: 0 0.75rem 0.75rem 0.75rem;
+			padding: 0 0.5rem 0.5rem 0.5rem;
 			text-align: left;
+
+			&:not(:first-child) {
+				text-align: center;
+			}
 		}
 
 		thead {

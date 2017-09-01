@@ -20,10 +20,10 @@
 </section>
 
 <section class="main style1">
-  <div class="inner" *ngIf="pageData.notes && pageData.notes.length">
+  <div class="inner" *ngIf="pageData.note">
     <h4>Please Note <span class="icon fa-info-circle accent3"></span></h4>
-    <div class="box" *ngFor="let note of pageData.notes">
-      <p>{{ note }}</p>
+    <div class="box">
+      <p [innerHTML]="pageData.note"></p>
     </div>
   </div>
 </section>

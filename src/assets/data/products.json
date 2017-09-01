@@ -1,9 +1,6 @@
 {
   "title": "Products",
-  "notes": [
-    "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for a refund or exchange.",
-    "If you are not 100% satisfied with your purchase, you can return or exchange within 14 days of purchase."
-  ],
+  "note": "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for a refund or exchange.<br><br>If you are not 100% satisfied with your purchase, you can return or exchange within 14 days of purchase.",
   "products": [
     {
       "name": "Kevin Murphy",

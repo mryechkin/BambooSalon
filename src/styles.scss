@@ -2,6 +2,12 @@
 @import '../node_modules/font-awesome/scss/font-awesome';
 @import 'vendor/px-vortex/assets/sass/main';
 
+a {
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
 app-appointments {
   & header {
     & h2 {
@@ -10,6 +16,27 @@ app-appointments {
       }
     }
   }
+}
+
+app-contact {
+  .contact-info {
+    .text-center {
+      @include breakpoint(small) {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 1.5rem;
+        }
+      }
+      .icon {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+ngui-map {
+  margin-bottom: 1rem;
 }
 
 .text-center {

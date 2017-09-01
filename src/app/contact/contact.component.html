@@ -1,3 +1,26 @@
-<p>
-  contact works!
-</p>
+<section class="main style1">
+  <header>
+    <h2>{{ pageData.title }}</h2>
+    <p>{{ pageData.subtitle }}</p>
+  </header>
+  <footer>
+    <div class="row contact-info">
+      <div class="col-xs-12 col-sm-4 text-center">
+        <div class="icon alt fa-phone fa-lg accent4"></div>
+        <div>{{ pageData.phone }}</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <div class="icon alt fa-map-marker fa-lg accent4"></div>
+        <div [innerHTML]="pageData.address"></div>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <div class="icon alt fa-envelope fa-lg accent4"></div>
+        <div>{{ pageData.email }}</div>
+      </div>
+    </div>
+    <hr>
+    <ngui-map zoom="17" center="{{ pageData.lat }}, {{ pageData.lng }}">
+      <marker [position]="position"></marker>
+    </ngui-map>
+  </footer>
+</section>

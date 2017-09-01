@@ -7,6 +7,8 @@ import { MomentModule } from 'angular2-moment';
 
 import { DataService } from './data.service';
 
+import { NguiMapModule } from '@ngui/map';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -46,7 +48,10 @@ import { BookingComponent } from './booking/booking.component';
     HttpModule,
     AppRoutingModule,
     SlickModule.forRoot(),
-    MomentModule
+    MomentModule,
+    NguiMapModule.forRoot({
+      apiUrl: 'https://maps.google.com/maps/api/js?libraries=visualization,places,drawing'
+    })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

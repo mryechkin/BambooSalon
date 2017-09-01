@@ -1,3 +1,40 @@
-<p>
-  services works!
-</p>
+<section class="main style1">
+  <header class="small">
+    <h2>{{ pageData.title }}</h2>
+    <p [innerHTML]="pageData.subtitle"></p>
+  </header>
+  <div class="inner" *ngIf="pageData.services && pageData.services.length">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <th>Service</th>
+          <th>Tier 1 ($)</th>
+          <th>Tier 2 ($)</th>
+          <th>Tier 3 ($)</th>
+          <th>Tier 4 ($)</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let service of pageData.services">
+            <td>{{ service.name }}</td>
+            <td>{{ service.price1 || '-' }}</td>
+            <td>{{ service.price2 || '-' }}</td>
+            <td>{{ service.price3 || '-' }}</td>
+            <td>{{ service.price4 || '-'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box" *ngIf="pageData.hst">
+      <p>{{ pageData.hst }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="main style1">
+  <div class="inner" *ngIf="pageData.note">
+    <h4>Please Note <span class="icon fa-info-circle accent3"></span></h4>
+    <div class="box">
+      <p [innerHTML]="pageData.note"></p>
+    </div>
+  </div>
+</section>

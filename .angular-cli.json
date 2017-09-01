@@ -18,9 +18,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss",
         "vendor/slick/slick.css",
-        "vendor/slick/slick-theme.css"
+        "vendor/slick/slick-theme.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.scss"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [

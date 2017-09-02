@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../data.service";
 
 @Component({
   selector: 'app-gallery',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  pageData = <any>{};
+
+  constructor(private dataService: DataService) {
+    this.dataService.getDataFromUrl('assets/data/gallery.json').subscribe(
+      (res) => {
+        this.pageData = res;
+      },
+      (error) => console.log('Error fetching page data: ' + error)
+    )
+  }
 
   ngOnInit() {
   }

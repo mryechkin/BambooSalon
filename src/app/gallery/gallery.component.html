@@ -1,3 +1,15 @@
-<p>
-  gallery works!
-</p>
+<section class="main style1">
+  <header>
+    <h2>{{ pageData.title }}</h2>
+    <p>{{ pageData.subtitle }}</p>
+  </header>
+  <div class="inner">
+    <div class="box alt" *ngIf="pageData.gallery && pageData.gallery.length">
+      <div class="col-xs-6 col-sm-4 col-lg-3" *ngFor="let img of pageData.gallery">
+        <span class="image fit">
+          <a data-fancybox="gallery" href="{{ img }}"><img src="{{ img }}"></a>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -20,6 +20,7 @@
       "styles": [
         "vendor/slick/slick.css",
         "vendor/slick/slick-theme.css",
+        "vendor/fancybox/jquery.fancybox.min.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.scss"
       ],
@@ -29,11 +30,12 @@
         ]
       },
       "scripts": [
-        "vendor/px-vortex/assets/js/jquery.min.js",
+        "../node_modules/jquery/dist/jquery.min.js",
         "vendor/px-vortex/assets/js/jquery.dropotron.min.js",
         "vendor/px-vortex/assets/js/skel.min.js",
         "vendor/px-vortex/assets/js/util.js",
         "vendor/px-vortex/assets/js/main.js",
+        "vendor/fancybox/jquery.fancybox.min.js",
         "vendor/slick/slick.min.js"
       ],
       "environmentSource": "environments/environment.ts",

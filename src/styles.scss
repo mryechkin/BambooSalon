@@ -35,8 +35,58 @@ app-contact {
   }
 }
 
+app-gallery {
+  .main {
+    .inner {
+      display: inline-block;
+    }
+  }
+}
+
+app-thebaldbarber {
+  .box {
+    margin-bottom: 0;
+  }
+
+  .main {
+    & > header {
+      & > p {
+        margin-bottom: 0;
+
+        img {
+          width: 22rem;
+
+          @include breakpoint(large) {
+            width: 20rem;
+          }
+
+          @include breakpoint(medium) {
+            width: 18rem;
+          }
+
+          @include breakpoint(small) {
+            width: 15rem;
+          }
+
+          @include breakpoint(xsmall) {
+            width: 12rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 ngui-map {
   margin-bottom: 1rem;
+}
+
+.fancybox-arrow, .fancybox-button {
+  box-shadow: none !important;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 .text-center {

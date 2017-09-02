@@ -1,0 +1,29 @@
+{
+  "title": "The Bald Barber",
+  "services": [
+    {
+      "name": "Men's Cut",
+      "price": 25
+    },
+    {
+      "name": "Men's Cut and Beard Trim",
+      "price": 30 
+    },
+    {
+      "name": "Beard Trim",
+      "price": 10
+    },
+    {
+      "name": "Boys Cut (Age 6-14)",
+      "price": 20
+    },
+    {
+      "name": "Buzz Cut",
+      "price": 10
+    },
+    {
+      "name": "Hair Tattoo",
+      "price": "10+"
+    }
+  ]
+}

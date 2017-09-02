@@ -1,3 +1,54 @@
-<p>
-  thebaldbarber works!
-</p>
+<section class="main style1">
+  <header>
+    <h2>{{ pageData.title }}</h2>
+    <p>
+      <img src="assets/images/thebaldbarber-white.jpg" border="0" />
+    </p>
+  </header>
+  <div class="inner">
+    <div class="row">
+
+      <div class="col-xs-12 col-md-4 col-md-push-4">
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <th>Service</th>
+              <th>Price ($)</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let service of pageData.services">
+                <td>{{ service.name }}</td>
+                <td>{{ service.price || '-' }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-md-pull-4">
+        <div class="box alt" *ngIf="imagesLeft && imagesLeft.length">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-6" *ngFor="let imageSrc of imagesLeft">
+              <span class="image fit">
+                <img src="{{ imageSrc }}" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <div class="box alt" *ngIf="imagesRight && imagesRight.length">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-6" *ngFor="let imageSrc of imagesRight">
+              <span class="image fit">
+                <img src="{{ imageSrc }}" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

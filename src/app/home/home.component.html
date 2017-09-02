@@ -3,11 +3,6 @@
   <ngx-slick class="image" [config]="bannerSlidesConfig">
     <img ngxSlickItem *ngFor="let slide of bannerSlides" src="{{ slide.img }}" alt="" />
   </ngx-slick>
-  <!-- <div class="image filtered slick-banner" data-position="center">
-    <img src="assets/images/banner2.jpg" alt="" />
-    <img src="assets/images/banner3.jpg" alt="" />
-    <img src="assets/images/banner1.jpg" alt="" />
-  </div> -->
   <header class="intro">
     <h2>{{ pageData.introTitle }}</h2>
     <div>
@@ -40,7 +35,7 @@
   </div>
   <footer>
     <ul class="actions">
-      <li><a routerLink="services" class="button special next">{{ pageData.servicesButtonText }}</a></li>
+      <li><a routerLink="/services" class="button special next">{{ pageData.servicesButtonText }}</a></li>
     </ul>
   </footer>
 </section>

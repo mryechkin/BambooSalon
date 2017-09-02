@@ -8,8 +8,8 @@ import { DataService } from "../data.service";
 })
 export class AppointmentsComponent implements OnInit {
 
-  pageData = {};
-  bookingData = {};
+  pageData = <any>{};
+  bookingData = <any>{};
 
   constructor(private dataService: DataService) {
     this.dataService.getDataFromUrl('assets/data/appointments.json').subscribe(

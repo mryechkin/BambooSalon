@@ -8,7 +8,7 @@ import { DataService } from "../data.service";
 })
 export class ServicesComponent implements OnInit {
 
-  pageData = {};
+  pageData = <any>{};
 
   constructor(private dataService: DataService) {
     this.dataService.getDataFromUrl('assets/data/services.json').subscribe(

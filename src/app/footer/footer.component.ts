@@ -8,7 +8,7 @@ import { DataService } from "../data.service";
 })
 export class FooterComponent implements OnInit {
 
-  pageData = {};
+  pageData = <any>{};
 
   constructor(private dataService: DataService) {
     this.dataService.getDataFromUrl('assets/data/footer.json').subscribe(

@@ -8,8 +8,8 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-  pageData = {};
-  bookingData = {};
+  pageData = <any>{};
+  bookingData = <any>{};
 
   bannerSlidesConfig = {
     accessibility: false,

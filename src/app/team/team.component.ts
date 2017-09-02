@@ -8,7 +8,7 @@ import { DataService } from "../data.service";
 })
 export class TeamComponent implements OnInit {
 
-  pageData = {};
+  pageData = <any>{};
 
   bannerSlidesConfig = {
     accessibility: false,

@@ -8,7 +8,7 @@ import { DataService } from "../data.service";
 })
 export class ProductsComponent implements OnInit {
 
-  pageData = {};
+  pageData = <any>{};
 
   bannerSlidesConfig = {
     accessibility: false,

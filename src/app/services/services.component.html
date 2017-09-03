@@ -4,6 +4,33 @@
     <p [innerHTML]="pageData.subtitle"></p>
   </header>
   <div class="inner" *ngIf="pageData.services && pageData.services.length">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+        <h5>Tier 1 (Apprentice)</h5>
+        <p>
+          {{ pageData.tier1.join(', ')}}
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+        <h5>Tier 2 (Junior)</h5>
+        <p>
+          {{ pageData.tier2.join(', ')}}
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+        <h5>Tier 3 (Intermediate)</h5>
+        <p>
+          {{ pageData.tier3.join(', ')}}
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+        <h5>Tier 4 (Senior)</h5>
+        <p class="no-bottom-margin">
+          {{ pageData.tier4.join(', ')}}
+        </p>
+      </div>
+    </div>
+    <hr>
     <div class="table-wrapper">
       <table>
         <thead>

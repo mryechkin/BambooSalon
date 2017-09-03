@@ -1,7 +1,7 @@
 <section class="main style1">
   <header>
     <h2>{{ pageData.title }}</h2>
-    <p>{{ pageData.subtitle }}</p>
+    <p [innerHTML]="pageData.subtitle"></p>
   </header>
   <footer>
     <div class="row contact-info">

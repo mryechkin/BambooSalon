@@ -24,6 +24,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ThebaldbarberComponent } from './thebaldbarber/thebaldbarber.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BookingComponent } from './booking/booking.component';
     GalleryComponent,
     ThebaldbarberComponent,
     ContactComponent,
-    BookingComponent
+    BookingComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

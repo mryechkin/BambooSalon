@@ -1,0 +1,15 @@
+<section class="main style1">
+  <header>
+    <h2>{{ pageData.title }}</h2>
+    <p>
+      <span class="icon fa-question-circle-o accent3 fa-2x"></span>
+    </p>
+  </header>
+  <div class="inner" *ngIf="pageData.questions && pageData.questions.length">
+    <ng-container *ngFor="let q of pageData.questions; let i = index" [attr.data-index]="i">
+      <h4><span class="icon fa-question-circle accent3"></span> {{ q.question }}</h4>
+      <p [innerHTML]="q.answer"></p>
+      <hr *ngIf="i < pageData.questions.length - 1">
+    </ng-container>
+  </div>
+</section>

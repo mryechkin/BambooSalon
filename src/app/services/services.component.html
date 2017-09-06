@@ -7,19 +7,19 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">
         <h5>Tier 1 (Apprentice)</h5>
-        <p>
+        <p class="no-bottom-margin">
           {{ pageData.tier1.join(', ')}}
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">
         <h5>Tier 2 (Junior)</h5>
-        <p>
+        <p class="no-bottom-margin">
           {{ pageData.tier2.join(', ')}}
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 text-center">
         <h5>Tier 3 (Intermediate)</h5>
-        <p>
+        <p class="no-bottom-margin">
           {{ pageData.tier3.join(', ')}}
         </p>
       </div>
@@ -59,7 +59,7 @@
 
 <section class="main style1">
   <div class="inner" *ngIf="pageData.note">
-    <h4>Please Note <span class="icon fa-info-circle accent3"></span></h4>
+    <h4><span class="icon fa-asterisk accent1"></span> Please Note</h4>
     <div class="box">
       <p [innerHTML]="pageData.note"></p>
     </div>

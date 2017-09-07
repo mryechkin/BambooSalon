@@ -47,10 +47,28 @@
       "imageUrl": "assets/images/team/Morgan.jpg"
     },
     {
+      "name": "Tanner Carrothers",
+      "title": "Stylist",
+      "bio": "Tanner is Bamboo's newest family member and she has hit the ground running. With 3 years of experience in a high end salon, Tanner's expertise in colour and cuts will not disappoint. Can't get in with Nick? Tanner is an excellent option as she is well trained in Men's styling! Tanner's easy going personality will have you feeling comfortable the second you meet her!",
+      "imageUrl": "assets/images/team/Tanner.jpg"
+    },
+    {
       "name": "Lyndsay Nicholson",
       "title": "Stylist / Assisstant",
       "bio": "Have you ever had that friend who remembers LITERALLY everything? That’s Lyndsay. You’ll see her around the salon, working on clients and having a laugh with anyone and everyone nearby.",
       "imageUrl": "assets/images/team/Lyndsay.jpg"
+    },
+    {
+      "name": "Meredith Brum",
+      "title": "Receptionist / Manager",
+      "bio": "Meredith is Joining Bamboo every evening to help run our busy reception area. Meredith is a long time friend of Tiffany and Nick and she is a wonderful addition to the Bamboo Family. Any appointment questions you may have, mere will be happy to help!",
+      "imageUrl": "assets/images/team/Meredith.jpg"
+    },
+    {
+      "name": "Jenny Bauer",
+      "title": "Apprentice / Assistant",
+      "bio": "Jenny will be attending Voila Institute in November 2017, she will be the Bamboo Baby, learning and training under Tiffany. We are excited to have this kind soul join the Bamboo Family and to watch her grow and develop into an amazing stylist!",
+      "imageUrl": "assets/images/team/Jenny.jpg"
     }
   ]
 }

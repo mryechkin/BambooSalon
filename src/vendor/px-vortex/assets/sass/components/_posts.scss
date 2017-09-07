@@ -33,14 +33,16 @@
 			flush:				true
 		));
 
+		@include vendor('justify-content', 'center');
+
 		@include breakpoint(medium) {
 			@include vendor('justify-content', 'center');
 
 			@include flexgrid-resize((
-				columns:		2,
+				columns:		3,
 				gutters:		3rem,
 				flush:			true,
-				prev-columns:	2
+				prev-columns:	4
 			));
 
 			article:nth-child(3n):last-child {
@@ -53,7 +55,7 @@
 				columns:		2,
 				gutters:		2rem,
 				flush:			true,
-				prev-columns:	(4, 2)
+				prev-columns:	(4, 3)
 			));
 		}
 
@@ -62,7 +64,7 @@
 				columns:		1,
 				gutters:		3rem,
 				flush:			true,
-				prev-columns:	(4, 2)
+				prev-columns:	(4, 3, 2)
 			));
 		}
 

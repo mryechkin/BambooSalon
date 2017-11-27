@@ -2,6 +2,9 @@
   <header class="small">
     <h2>{{ pageData.title }}</h2>
     <p [innerHTML]="pageData.subtitle"></p>
+    <div class="box">
+      <p class="subtitle-note" [innerHTML]="pageData.subtitleNote"></p>
+    </div>
   </header>
   <div class="inner" *ngIf="pageData.services && pageData.services.length">
     <div class="row">
@@ -42,7 +45,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let service of pageData.services">
-            <td>{{ service.name }}</td>
+            <td class="service-name">{{ service.name }}</td>
             <td>{{ service.price1 || '-' }}</td>
             <td>{{ service.price2 || '-' }}</td>
             <td>{{ service.price3 || '-' }}</td>

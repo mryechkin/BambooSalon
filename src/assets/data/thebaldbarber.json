@@ -22,8 +22,19 @@
       "price": 10
     },
     {
-      "name": "Hair Tattoo",
-      "price": "10+"
+      "name": "Full Classic Shave",
+      "price": 59,
+      "duration": "60 mins"
+    },
+    {
+      "name": "Full Shave + Haircut",
+      "price": 80,
+      "duration": "90 mins"
+    },
+    {
+      "name": "Neck Clean Up (No Haircut)",
+      "price": 22,
+      "duration": "15 mins"
     }
   ]
 }

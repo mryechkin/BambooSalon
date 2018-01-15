@@ -3,8 +3,8 @@
   "subtitle": "<em>Balayage, Ombré, Sombre?</em><br><br>Confused by our lingo? At Bamboo, we are well known for our colour work (including ombré, balayage, sombre, colour melts and root smudges).<br><br>All of our pricing is a-la-carte!",
   "subtitleNote": "Colour services do not include a blowdry but you have the option to leave with wet hair to save $$$!<br><span class='icon fa-scissors accent2'></span><br>Toners booked with a colour service are $25-35 and are not always needed, therefore are not included in the price. We won't do one if we don't have to!<br><span class='icon fa-scissors accent2'></span><br>Haircuts include a wash and style!",
   "hst": "HST will be added to all products and services. Cash & Cheque accepted. Please arrive 15 min before appointment time. Prices are subject to chance without notice.",
-  "note": "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for a refund or exchange.",
-  "tier1": ["Lyndsay", "Jenny"],
+  "note": "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for an exchange.",
+  "tier1": ["Jenny"],
   "tier2": ["Haley", "Morgan", "Emily"],
   "tier3": ["Corrie", "Tanner"],
   "tier4": ["Amber", "Tiffany"],
@@ -26,8 +26,8 @@
     {
       "name": "Child's Cut",
       "price1": 20,
-      "price2": 25,
-      "price3": 25,
+      "price2": 20,
+      "price3": 20,
       "price4": 30
     },
     {

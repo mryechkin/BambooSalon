@@ -4,157 +4,153 @@
   "subtitleNote": "Colour services do not include a blowdry but you have the option to leave with wet hair to save $$$!<br><span class='icon fa-scissors accent2'></span><br>Toners booked with a colour service are $25-35 and are not always needed, therefore are not included in the price. We won't do one if we don't have to!<br><span class='icon fa-scissors accent2'></span><br>Haircuts include a wash and style!",
   "hst": "HST will be added to all products and services. Cash & Cheque accepted. Please arrive 15 min before appointment time. Prices are subject to chance without notice.",
   "note": "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for an exchange.",
-  "tier1": ["Jenny"],
-  "tier2": ["Haley", "Morgan", "Emily"],
-  "tier3": ["Corrie", "Tanner"],
-  "tier4": ["Amber", "Tiffany"],
+  "tier1": ["Tara", "Amber L", "Emma", "Morgan"],
+  "tier2": ["Corrie", "Tanner", "Emily", "Haley"],
+  "tier3": ["Tiffany", "Amber P"],
   "services": [
     {
       "name": "Women's Cut",
-      "price1": 35,
-      "price2": 45,
-      "price3": 50,
-      "price4": 55
+      "price1": 47,
+      "price2": 52,
+      "price3": 58
     },
     {
       "name": "Men's Cut",
-      "price1": 20,
-      "price2": 25,
-      "price3": 30,
-      "price4": 35
+      "price1": 25,
+      "price2": 30,
+      "price3": 35
     },
     {
-      "name": "Child's Cut",
-      "price1": 20,
-      "price2": 20,
-      "price3": 20,
-      "price4": 30
+      "name": "Child's Cut (age 3-14)",
+      "price1": 25,
+      "price2": 25,
+      "price3": 35
     },
     {
       "name": "Princess Package",
-      "price1": 35,
-      "price2": 35,
-      "price3": null,
-      "price4": null
+      "price1": 39,
+      "price2": 39,
+      "price3": null
     },
     {
       "name": "Bang Trim",
       "price1": 10,
-      "price2": 10,
-      "price3": 15,
-      "price4": 15
+      "price2": 15,
+      "price3": 15
     },
     {
       "name": "Root Retouch",
-      "price1": 45,
-      "price2": 48,
-      "price3": 50,
-      "price4": 52
+      "price1": 52,
+      "price2": 55,
+      "price3": 63
     },
     {
       "name": "Full Colour",
-      "price1": 70,
-      "price2": 75,
-      "price3": 80,
-      "price4": 85
+      "price1": 80,
+      "price2": 82,
+      "price3": 88
     },
     {
       "name": "Partial Highlight",
-      "price1": 65,
-      "price2": 70,
-      "price3": 75,
-      "price4": 80
+      "price1": 75,
+      "price2": 80,
+      "price3": 85
     },
     {
       "name": "Full Highlight",
-      "price1": 80,
-      "price2": 85,
-      "price3": 90,
-      "price4": 95
-    },
-    {
-      "name": "Ombré",
-      "price1": 160,
-      "price2": 160,
-      "price3": 170,
-      "price4": 170
+      "price1": 95,
+      "price2": 100,
+      "price3": 105
     },
     {
       "name": "Balayage",
-      "price1": 160,
-      "price2": 160,
-      "price3": 170,
-      "price4": 170
+      "price1": 170,
+      "price2": 170,
+      "price3": 170
     },
     {
-      "name": "Ombré Touchup",
-      "price1": 155,
-      "price2": 155,
-      "price3": 160,
-      "price4": 160
+      "name": "Ombré",
+      "price1": 170,
+      "price2": 170,
+      "price3": 170
     },
     {
       "name": "Olaplex",
       "price1": 45,
       "price2": 45,
-      "price3": 45,
-      "price4": 45
+      "price3": 45
     },
     {
       "name": "2 Colours (Partial)",
-      "price1": 70,
-      "price2": 75,
-      "price3": 80,
-      "price4": 85
+      "price1": 85,
+      "price2": 90,
+      "price3": 95
     },
     {
       "name": "2 Colours (Full)",
-      "price1": 85,
-      "price2": 90,
-      "price3": 95,
-      "price4": 100
+      "price1": 105,
+      "price2": 110,
+      "price3": 115
     },
     {
       "name": "Toner",
-      "price1": 60,
-      "price2": 60,
-      "price3": 60,
-      "price4": 60
+      "price1": 65,
+      "price2": 65,
+      "price3": 65
+    },
+    {
+      "name": "Toner added to Highlight Service",
+      "price1": 35,
+      "price2": 35,
+      "price3": 35
+    },
+    {
+      "name": "Few highlights added to Colour Service",
+      "price1": "45-55",
+      "price2": "45-55",
+      "price3": "45-55"
     },
     {
       "name": "Blowout w/ Colour Service",
-      "price1": 30,
-      "price2": 30,
-      "price3": 35,
-      "price4": 35
+      "price1": 35,
+      "price2": 35,
+      "price3": 35
     },
     {
       "name": "Blowout w/ Special Occasion Style",
-      "price1": 40,
-      "price2": 40,
-      "price3": 45,
-      "price4": 45
+      "price1": 45,
+      "price2": 45,
+      "price3": 50
+    },
+    {
+      "name": "Babylights (Partial)",
+      "price1": 130,
+      "price2": 130,
+      "price3": 130
+    },
+    {
+      "name": "Babylights (Full)",
+      "price1": 160,
+      "price2": 160,
+      "price3": 160
     },
     {
       "name": "Updo",
-      "price1": 65,
-      "price2": 70,
-      "price3": 75,
-      "price4": 75
+      "price1": 75,
+      "price2": 75,
+      "price3": 75
     },
     {
-      "name": "Half Up",
-      "price1": 55,
+      "name": "Half-up",
+      "price1": 60,
       "price2": 60,
-      "price3": 65,
-      "price4": 65
+      "price3": 60
     },
     {
-      "name": "Babylights",
-      "price1": 110,
-      "price2": 110,
-      "price3": 115,
-      "price4": 120
+      "name": "Mommy Makeover",
+      "price1": 175,
+      "price2": 175,
+      "price3": null
     }
   ]
 }

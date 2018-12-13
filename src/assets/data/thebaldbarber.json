@@ -3,19 +3,19 @@
   "services": [
     {
       "name": "Men's Cut",
-      "price": 25
+      "price": 30
     },
     {
       "name": "Men's Cut and Beard Trim",
-      "price": 30 
+      "price": 35
     },
     {
       "name": "Beard Trim",
-      "price": 10
+      "price": 20
     },
     {
       "name": "Boys Cut (Age 6-14)",
-      "price": 20
+      "price": 25
     },
     {
       "name": "Buzz Cut",

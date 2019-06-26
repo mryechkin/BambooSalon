@@ -1,0 +1,40 @@
+{
+  "title": "The Bald Barber",
+  "services": [
+    {
+      "name": "Men's Cut",
+      "price": 30
+    },
+    {
+      "name": "Men's Cut and Beard Trim",
+      "price": 35
+    },
+    {
+      "name": "Beard Trim",
+      "price": 20
+    },
+    {
+      "name": "Boys Cut (Age 6-14)",
+      "price": 25
+    },
+    {
+      "name": "Buzz Cut",
+      "price": 10
+    },
+    {
+      "name": "Full Classic Shave",
+      "price": 59,
+      "duration": "60 mins"
+    },
+    {
+      "name": "Full Shave + Haircut",
+      "price": 80,
+      "duration": "90 mins"
+    },
+    {
+      "name": "Neck Clean Up (No Haircut)",
+      "price": 22,
+      "duration": "15 mins"
+    }
+  ]
+}

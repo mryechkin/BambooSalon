@@ -1,0 +1,156 @@
+{
+  "title": "Our Services",
+  "subtitle": "<em>Balayage, Ombré, Sombre?</em><br><br>Confused by our lingo? At Bamboo, we are well known for our colour work (including ombré, balayage, sombre, colour melts and root smudges).<br><br>All of our pricing is a-la-carte!",
+  "subtitleNote": "Colour services do not include a blowdry but you have the option to leave with wet hair to save $$$!<br><span class='icon fa-scissors accent2'></span><br>Toners booked with a colour service are $25-35 and are not always needed, therefore are not included in the price. We won't do one if we don't have to!<br><span class='icon fa-scissors accent2'></span><br>Haircuts include a wash and style!",
+  "hst": "HST will be added to all products and services. Cash & Cheque accepted. Please arrive 15 min before appointment time. Prices are subject to chance without notice.",
+  "note": "We do not guarantee colour services without the purchase of a recommended at home care regimen. If you are not 100% satisfied with your purchase, return it for an exchange.",
+  "tier1": ["Tara", "Amber L"],
+  "tier2": ["Corrie", "Emily", "Emma", "Morgan"],
+  "tier3": ["Tiffany", "Amber P"],
+  "services": [
+    {
+      "name": "Women's Cut",
+      "price1": 47,
+      "price2": 52,
+      "price3": 58
+    },
+    {
+      "name": "Men's Cut",
+      "price1": 25,
+      "price2": 30,
+      "price3": 35
+    },
+    {
+      "name": "Child's Cut (age 3-14)",
+      "price1": 25,
+      "price2": 25,
+      "price3": 35
+    },
+    {
+      "name": "Princess Package",
+      "price1": 39,
+      "price2": 39,
+      "price3": null
+    },
+    {
+      "name": "Bang Trim",
+      "price1": 10,
+      "price2": 15,
+      "price3": 15
+    },
+    {
+      "name": "Root Retouch",
+      "price1": 52,
+      "price2": 55,
+      "price3": 63
+    },
+    {
+      "name": "Full Colour",
+      "price1": 80,
+      "price2": 82,
+      "price3": 88
+    },
+    {
+      "name": "Partial Highlight",
+      "price1": 75,
+      "price2": 80,
+      "price3": 85
+    },
+    {
+      "name": "Full Highlight",
+      "price1": 95,
+      "price2": 100,
+      "price3": 105
+    },
+    {
+      "name": "Balayage",
+      "price1": 170,
+      "price2": 170,
+      "price3": 170
+    },
+    {
+      "name": "Ombré",
+      "price1": 170,
+      "price2": 170,
+      "price3": 170
+    },
+    {
+      "name": "Olaplex",
+      "price1": 45,
+      "price2": 45,
+      "price3": 45
+    },
+    {
+      "name": "2 Colours (Partial)",
+      "price1": 85,
+      "price2": 90,
+      "price3": 95
+    },
+    {
+      "name": "2 Colours (Full)",
+      "price1": 105,
+      "price2": 110,
+      "price3": 115
+    },
+    {
+      "name": "Toner",
+      "price1": 65,
+      "price2": 65,
+      "price3": 65
+    },
+    {
+      "name": "Toner added to Highlight Service",
+      "price1": 35,
+      "price2": 35,
+      "price3": 35
+    },
+    {
+      "name": "Few highlights added to Colour Service",
+      "price1": "45-55",
+      "price2": "45-55",
+      "price3": "45-55"
+    },
+    {
+      "name": "Blowout w/ Colour Service",
+      "price1": 35,
+      "price2": 35,
+      "price3": 35
+    },
+    {
+      "name": "Blowout w/ Special Occasion Style",
+      "price1": 45,
+      "price2": 45,
+      "price3": 50
+    },
+    {
+      "name": "Babylights (Partial)",
+      "price1": 130,
+      "price2": 130,
+      "price3": 130
+    },
+    {
+      "name": "Babylights (Full)",
+      "price1": 160,
+      "price2": 160,
+      "price3": 160
+    },
+    {
+      "name": "Updo",
+      "price1": 75,
+      "price2": 75,
+      "price3": 75
+    },
+    {
+      "name": "Half-up",
+      "price1": 60,
+      "price2": 60,
+      "price3": 60
+    },
+    {
+      "name": "Mommy Makeover",
+      "price1": 175,
+      "price2": 175,
+      "price3": null
+    }
+  ]
+}
